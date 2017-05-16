@@ -25,8 +25,6 @@ It is different from the same because it comments out a line at the beginning, i
 
 Please see the documentation for more details.
 
-_Limitation_: Multiline comments are not supported.
-
 ## Installation
 
 Use your favorite plugin-manager, or install manually.
