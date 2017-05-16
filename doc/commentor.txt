@@ -1,0 +1,41 @@
+*Commentor*                                                Version 2.0
+
+===============================================================================
+CONTENTS                                                  *Commentor-contents*
+
+1. Introduction                                 |Commentor-intro|
+2. Usage                                        |Commentor-usage|
+3. Configuration                                |Commentor-config|
+4. Frequently Asked Questions                   |Commentor-faq|
+5. Changes in version 2.0                       |Commentor-v2.0|
+
+===============================================================================
+1. INTRODUCTION                                              *Commentor-intro*
+
+Toggling comments became easy! Use `vim-commentor` to toggle comments in any
+filetype with ease.
+Vim-Commentor provides a comment operator that comments out a linewise motion in
+normal mode, as well as the selected text in visual mode.
+
+===============================================================================
+2. USAGE                                                     *Commentor-usage*
+
+* To (un)comment a single line: gcc
+* To (un)comment selected text: gc
+* To comment out a motion: gc<motion>
+  e.g., gcj will toggle comment over the current line and the next
+        gc2k will toggle comment over the current line and two lines above
+        gcip will comment out inside the current paragraph, and so on.
+
+================================================================================
+3. CONFIGURATION                                             *Commentor-config*
+
+* To change the comment operator to ,c:
+        nmap ,c <Plug>Commentor
+        xmap ,c <Plug>Commentor
+
+* To change the mapping for (un)commenting the current line to ,cc:
+        nmap ,cc <Plug>CommentorLine
+
+-------------------------------------------------------------------------------=
+
