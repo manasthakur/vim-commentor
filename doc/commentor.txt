@@ -6,8 +6,6 @@ CONTENTS                                                  *Commentor-contents*
 1. Introduction                                 |Commentor-intro|
 2. Usage                                        |Commentor-usage|
 3. Configuration                                |Commentor-config|
-4. Frequently Asked Questions                   |Commentor-faq|
-5. Changes in version 2.0                       |Commentor-v2.0|
 
 ===============================================================================
 1. INTRODUCTION                                              *Commentor-intro*
