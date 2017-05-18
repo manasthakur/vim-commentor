@@ -9,9 +9,9 @@ if exists("g:loaded_commentor")
 endif
 let g:loaded_commentor = 1
 
-nnoremap <silent> <Plug>Commentor :set opfunc=commentor#CommentToggle<CR>g@
+nnoremap <silent> <Plug>Commentor :<C-u>set opfunc=commentor#CommentToggle<CR>g@
 xnoremap <silent> <Plug>Commentor :<C-u>call commentor#CommentToggle(visualmode(), 1)<CR>
-nnoremap <silent> <Plug>CommentorLine :set opfunc=commentor#CommentToggle<bar>execute "normal! " . v:count1 . "g@_"<CR>
+nnoremap <silent> <Plug>CommentorLine :<C-u>set opfunc=commentor#CommentToggle<bar>execute "normal! " . v:count1 . "g@_"<CR>
 
 " Default mappings
 if !hasmapto('<Plug>Commentor')
