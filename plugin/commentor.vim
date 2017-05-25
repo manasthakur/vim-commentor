@@ -1,7 +1,7 @@
 " Vim-Commentor
 " AUTHOR: Manas Thakur (manasthakur17@gmail.com)
+" VERSION: 1.1
 " LICENSE: MIT
-" VERSION: 1.0
 
 " Exit if commentor is already loaded
 if exists("g:loaded_commentor")

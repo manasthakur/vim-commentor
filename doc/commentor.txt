@@ -1,4 +1,4 @@
-*Commentor*                                                Version 2.0
+*Vim-Commentor*                                                Version 1.1
 
 ===============================================================================
 CONTENTS                                                  *Commentor-contents*
@@ -25,7 +25,8 @@ normal mode, as well as the selected text in visual mode.
         gc2k will toggle comment over the current line and two lines above
         gcip will comment out inside the current paragraph, and so on.
 
-Limitation: Multiline comments (such as `/* ... */`) are not supported.
+Limitation: Multiline comments (such as `/* ... */`, where `...` spans multiple
+lines) are not supported.
 
 ================================================================================
 3. CONFIGURATION                                             *Commentor-config*
