@@ -8,8 +8,8 @@ function! commentor#CommentToggle(type, ...)
   let cmt_markers = split(substitute(substitute(&commentstring, '\S\zs%s', ' %s', ''), '%s\ze\S', '%s ', ''), '%s', 1)
 
   " Get space-trimmed LHS and RHS comment-markers
-  let lhs_cmt_marker = substitute(cmt_markers[0], ' ', '', '')
-  let rhs_cmt_marker = substitute(cmt_markers[1], ' ', '', '')
+  let lhs_cmt_marker = escape(substitute(cmt_markers[0], ' ', '', ''), '*')
+  let rhs_cmt_marker = escape(substitute(cmt_markers[1], ' ', '', ''), '*')
 
   " Check if the first line is commented
   if match(getline('.'), lhs_cmt_marker) == 0
